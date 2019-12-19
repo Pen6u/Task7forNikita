@@ -28,10 +28,12 @@ std::string Input() {
 }
 
 bool IsSizeSame(std::string& str1, std::string& str2) {
-	int size1 = str1.size();
-	int size2 = str2.size();
+	int size1 = (int)str1.size();
+	int size2 = (int)str2.size();
 	if ( size1 == size2 ) {
 		return 1;
+	} else {
+		return 0;
 	}
 }
 
@@ -49,8 +51,7 @@ bool IsPosible(std::string& str1, std::string& str2, bool sizeAnswer) {
 					if ( count == 0 ) {
 						return 1;
 					}
-				}
-				else {
+				} else {
 					return 0;
 				}
 		}

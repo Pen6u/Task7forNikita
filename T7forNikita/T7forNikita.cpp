@@ -56,6 +56,8 @@ bool IsPosible(std::string& str1, std::string& str2, bool sizeAnswer) {
 				}
 		}
 		return 1;
+	} else {
+		return 0;
 	}
 }
 
